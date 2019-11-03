@@ -1,23 +1,25 @@
 package org.kdzido.reldbms.fileandaccessmethods;
 
+import org.kdzido.reldbms.buffermanager.BufferManagerFacade;
+
 /**
  * Provides the fundamental file of records abstraction in for this DBMS.
  */
-public final class FilesAndAccessMethodsFacade {
+public class FilesAndAccessMethodsFacade {
 
-    /**
-     * @param record the array of record byte contents
-     * @return the new record ID
-     */
-    public long insertRecord(byte[] record) {
-        return 1L;
+    private final BufferManagerFacade bufferManager;
+
+    public FilesAndAccessMethodsFacade(final BufferManagerFacade bufferManager) {
+
+        this.bufferManager = bufferManager;
     }
 
     /**
+     * @param fileId the file ID
      * @param rid the record ID
      * @return the array of record bytes
      */
-    public byte[] findRecordByRid(long rid) {
-        return new byte[] {1,2,3};
+    public byte[] findRecordByRid(int fileId, long rid) {
+        return bufferManager.fetchPage(fileId, rid).data();
     }
 }
