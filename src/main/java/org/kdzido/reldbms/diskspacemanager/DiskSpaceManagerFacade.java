@@ -8,6 +8,8 @@ import java.util.*;
  * The Facade representing the disk space manager subsystem.
  *
  * Provides concept of a page as a unit of data.
+ *
+ * @author Krzysztof Dzido {@literal <krzysztof.dzido@gmail.com>}
  */
 @NonThreadSafe
 public class DiskSpaceManagerFacade {

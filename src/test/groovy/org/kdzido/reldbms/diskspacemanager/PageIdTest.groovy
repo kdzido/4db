@@ -2,6 +2,9 @@ package org.kdzido.reldbms.diskspacemanager
 
 import spock.lang.Specification
 
+/**
+ * @author Krzysztof Dzido {@literal <krzysztof.dzido@gmail.com>}
+ */
 class PageIdTest extends Specification {
 
     def "should create page ID"() {

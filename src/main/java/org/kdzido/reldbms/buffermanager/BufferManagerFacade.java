@@ -4,6 +4,8 @@ import org.kdzido.reldbms.shared.annotation.NonThreadSafe;
 
 /**
  * Reads pages from disk into memory for processing.
+ *
+ * @author Krzysztof Dzido {@literal <krzysztof.dzido@gmail.com>}
  */
 @NonThreadSafe
 public class BufferManagerFacade {

@@ -11,6 +11,8 @@ import static com.google.common.base.Preconditions.checkArgument;
 
 /**
  * Provides the fundamental file of records abstraction in for this DBMS.
+ *
+ * @author Krzysztof Dzido {@literal <krzysztof.dzido@gmail.com>}
  */
 @NonThreadSafe
 public class FilesAndAccessMethodsFacade {

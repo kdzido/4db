@@ -2,6 +2,9 @@ package org.kdzido.reldbms.buffermanager
 
 import spock.lang.Specification
 
+/**
+ * @author Krzysztof Dzido {@literal <krzysztof.dzido@gmail.com>}
+ */
 class PageTest extends Specification {
 
     def "should create empty page"() {

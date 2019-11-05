@@ -1,8 +1,12 @@
-package org.kdzido.reldbms.buffermanager
+package org.kdzido.reldbms.buffermanager.scanarios
 
+import org.kdzido.reldbms.buffermanager.BufferManagerFacade
 import spock.lang.Specification
 
-class BufferManagerFacadeTest extends Specification {
+/**
+ * @author Krzysztof Dzido {@literal <krzysztof.dzido@gmail.com>}
+ */
+class FetchPageWithRecordScenario extends Specification {
 
     def facade = new BufferManagerFacade()
 

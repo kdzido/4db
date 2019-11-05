@@ -4,6 +4,8 @@ import com.google.common.base.Objects;
 
 /**
  * Value Object representing unique page ID within a file.
+ *
+ * @author Krzysztof Dzido {@literal <krzysztof.dzido@gmail.com>}
  */
 public final class PageId {
 

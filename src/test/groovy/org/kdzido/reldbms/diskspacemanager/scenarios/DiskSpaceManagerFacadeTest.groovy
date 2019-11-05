@@ -1,7 +1,12 @@
-package org.kdzido.reldbms.diskspacemanager
+package org.kdzido.reldbms.diskspacemanager.scenarios
 
+import org.kdzido.reldbms.diskspacemanager.DiskSpaceManagerFacade
+import org.kdzido.reldbms.diskspacemanager.PageId
 import spock.lang.Specification
 
+/**
+ * @author Krzysztof Dzido {@literal <krzysztof.dzido@gmail.com>}
+ */
 class DiskSpaceManagerFacadeTest extends Specification {
 
     def facade = new DiskSpaceManagerFacade()

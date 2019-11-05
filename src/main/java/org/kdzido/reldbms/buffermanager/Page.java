@@ -4,6 +4,9 @@ import java.util.Arrays;
 
 import static com.google.common.base.Preconditions.checkArgument;
 
+/**
+ * @author Krzysztof Dzido {@literal <krzysztof.dzido@gmail.com>}
+ */
 public final class Page {
     static final int PAGE_SIZE = 8 * 1024;
 
