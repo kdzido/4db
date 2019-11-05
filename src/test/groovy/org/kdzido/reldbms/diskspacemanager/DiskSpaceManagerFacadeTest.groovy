@@ -21,6 +21,7 @@ class DiskSpaceManagerFacadeTest extends Specification {
         pageA != pageB
     }
 
+
     def "should allocate two pages within two files"() {
         when:
         PageId pageA = facade.allocatePageInFile(111)
@@ -29,6 +30,10 @@ class DiskSpaceManagerFacadeTest extends Specification {
         pageA != pageB  // no guarantee if pages are only unique within a single file
     }
 
+    def "should allocate contiguous pages in a file"() {
+        expect:
+        false
+    }
 
     def "should deallocate the page"() {
         expect:
